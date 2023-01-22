@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className={s.aboutSection}>
       <picture className={s.aboutImage}>
-        <source
+        {/* <source
           srcset={`${require("../../images/about-img-mob.webp")} 1x, ${require("../../images/about-img-mob@2x.webp")} 2x`}
           type="image/webp"
         />
@@ -21,17 +21,17 @@ export default function About() {
         <source
           srcset={`${require("../../images/about-img-tab.jpg")} 1x, ${require("../../images/about-img-tab@2x.jpg")} 2x`}
           type="image/jpeg"
-        />
+        /> */}
 
         <source
-          srcset={`${require("../../images/about-img-desk.webp")} 1x, ${require("../../images/about-img-desk@2x.webp")} 2x`}
+          srcset={`${require("../../images/about/people.webp")} 1x, ${require("../../images/about/people@2x.webp")} 2x`}
           type="image/webp"
         />
         <source
-          srcset={`${require("../../images/about-img-desk.jpg")} 1x, ${require("../../images/about-img-desk@2x.jpg")} 2x`}
+          srcset={`${require("../../images/about/people.jpg")} 1x, ${require("../../images/about/people@2x.jpg")} 2x`}
           type="image/jpeg"
         />
-        <img src={require("../../images/about-img-desk.jpg")} alt="our team" />
+        <img src={require("../../images/about/people.jpg")} alt="our team" />
       </picture>
       {/* <div className={s.container}> */}
       <div className={s.about}>
