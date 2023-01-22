@@ -1,0 +1,56 @@
+@import "../../sass/container";
+@import "../../sass/variables";
+
+.hero {
+  padding: 160px 0 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  width: 241px;
+  color: $text-color-secondary;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.35;
+  margin: 0 auto 16px;
+}
+
+.heroDescription {
+  width: 280px;
+  color: $text-color-secondary;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.23;
+  margin: 0 auto 24px;
+}
+
+@media screen and (min-width: 734px) {
+  .hero {
+    padding: 378px 0;
+  }
+
+  .heroTitle {
+    width: 523px;
+    font-size: 55px;
+    line-height: 1.36;
+  }
+  .heroDescription {
+    width: 523px;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1334px) {
+  .hero {
+    padding: 272px 0 270px;
+  }
+
+  .heroDescription {
+    width: 798px;
+    font-size: 40px;
+    line-height: 1.35;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../sass/container";
+@import "../../sass/variables";
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footerList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.footerItem {
+  width: 35px;
+}
+.footerItem:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footerLink {
+  width: 100%;
+  height: 100%;
+}
+
+.footerLink:hover .footerIcon,
+.footerLink:focus .footerIcon {
+}
+
+.footerIcon {
+  color: #ffff;
+}
+
+.heroDescription {
+  color: $text-color-secondary;
+}
+
+@media screen and (min-width: 734px) {
+  .footerList {
+    margin-bottom: 10px;
+  }
+}

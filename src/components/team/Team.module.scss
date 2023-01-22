@@ -1,0 +1,23 @@
+@import "../../sass/container";
+@import "../../sass/base";
+@import "../../sass/variables";
+
+.team {
+  padding: 72px 0 0;
+}
+
+.titleDescription {
+  margin-bottom: 63px;
+}
+
+@media screen and (min-width: 734px) {
+  .team {
+    padding: 50px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1334px) {
+  .team {
+    padding: 80px 0 88px;
+  }
+} ;

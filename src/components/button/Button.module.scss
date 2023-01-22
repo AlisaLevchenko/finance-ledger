@@ -1,0 +1,54 @@
+@import "../../sass/variables";
+
+.btn {
+  padding: 14px 32px;
+  min-width: 146px;
+  background-color: $accent-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.38;
+  border-radius: 5px;
+  color: $text-color-secondary;
+  border: none;
+  transition: $animation-bg;
+  border: 1px solid transparent;
+}
+
+.btnIcon {
+  display: inline-block;
+  margin-right: 8px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #2ebf4f;
+}
+
+.btnBordered {
+  background-color: transparent;
+  border-color: $bg-color-main;
+  transition: $animation-color, $animation-border, $animation-bg;
+}
+
+.green:hover,
+.green:focus {
+  border-color: $accent-color;
+  color: $accent-color;
+  background-color: $bg-color-main;
+}
+
+.blue:hover,
+.blue:focus {
+  border: 1px solid $accent-color-secondary;
+  color: $accent-color-secondary;
+  background-color: $bg-color-main;
+}
+
+@media screen and (min-width: 734px) {
+  .btn {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
