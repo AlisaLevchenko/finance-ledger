@@ -4,23 +4,19 @@
 
 .aboutSection {
   background-color: $accent-color;
-
-  // background-position: top center;
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url("../../images/about-img-mob@2x.jpg");
-  // }
-}
-
-.aboutImage img {
   width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.about {
-  padding: 79px 20px;
-  max-width: 279px;
+.aboutInner {
+  padding: 79px 0 79px 0;
+  width: 280px;
 }
 
 .titleLabel {
@@ -39,44 +35,62 @@
 }
 
 @media screen and (min-width: 734px) {
-  .aboutImage {
-    // display: none;
-  }
-
-  .about {
-    padding: 62px 32px;
-    max-width: 336px;
-  }
   .aboutSection {
     display: flex;
+    flex-direction: row;
+    background-color: transparent;
   }
-  // .aboutSection {
-  //   // background-image: url("../../images/about-img-tab.jpg");
-  //   background-image: url("../../images/about-img-desk.jpg");
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-position: left 50%;
 
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url("../../images/about-img-tab@2x.jpg");
-  //   }
-  // }
+  .aboutImageMob {
+    display: none;
+  }
+
+  .rightBG {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: $accent-color;
+  }
+
+  .leftBG {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../images/about/people.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .leftBGWebp {
+      background-image: url("../../images/about/people.webp");
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../images/about/people@2x.jpg");
+      .leftBGWebp {
+        background-image: url("../../images/about/people@2x.webp");
+      }
+    }
+  }
+
+  .aboutLeftSide {
+    width: 50%;
+  }
+
+  .aboutInner {
+    width: 100%;
+    padding: 62px 0 62px 30px;
+    width: 336px;
+  }
 }
 
 @media screen and (min-width: 1334px) {
-  .about {
+  .aboutInner {
     padding: 80px 28px 86px 20px;
+    width: 642px;
   }
-  // .aboutSection {
-  //   background-image: url("../../images/about-img-desk.jpg");
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url("../../images/about-img-desk@2x.jpg");
-  //   }
-  // }
 }

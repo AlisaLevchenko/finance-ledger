@@ -3,44 +3,46 @@ import logo from "../../images/logo.svg";
 
 export default function Navigation() {
   return (
-    <div className={s.container}>
-      <div className={s.navigation}>
-        <a className={s.logoLink} href="">
-          {/* <svg className={s.logoIcon}>
+    <header className={s.header}>
+      <div className={s.container}>
+        <div className={s.navigation}>
+          <a className={s.logoLink} href="/">
+            {/* <svg className={s.logoIcon}>
           <use href="../../images/symbol-defs.svg#icon-logo"></use>
         </svg> */}
-          <img src={logo} alt="logo" />
-        </a>
-        <nav>
-          <ul className={s.navList}>
-            <li className={s.navItem}>
-              <a className={s.navLink} href="">
-                Home
-              </a>
-            </li>
-            <li className={s.navItem}>
-              <a className={s.navLink} href="">
-                About
-              </a>
-            </li>
-            <li className={s.navItem}>
-              <a className={s.navLink} href="">
-                Cases
-              </a>
-            </li>
-            <li className={s.navItem}>
-              <a className={s.navLink} href="">
-                Blog
-              </a>
-            </li>
-            <li className={s.navItem}>
-              <a className={s.navLink} href="">
-                Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <img src={logo} alt="logo" />
+          </a>
+          <nav>
+            <ul className={s.navList}>
+              <li className={s.navItem}>
+                <a className={s.navLink} href="">
+                  Home
+                </a>
+              </li>
+              <li className={s.navItem}>
+                <a className={s.navLink} href="">
+                  About
+                </a>
+              </li>
+              <li className={s.navItem}>
+                <a className={s.navLink} href="">
+                  Cases
+                </a>
+              </li>
+              <li className={s.navItem}>
+                <a className={s.navLink} href="">
+                  Blog
+                </a>
+              </li>
+              <li className={s.navItem}>
+                <a className={s.navLink} href="">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }

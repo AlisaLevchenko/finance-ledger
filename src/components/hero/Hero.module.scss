@@ -1,5 +1,19 @@
 @import "../../sass/container";
+@import "../../sass/base";
 @import "../../sass/variables";
+
+.main {
+  background-color: $text-color-main;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../../images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .hero {
   padding: 160px 0 104px;

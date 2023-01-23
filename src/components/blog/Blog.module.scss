@@ -2,6 +2,17 @@
 @import "../../sass/base";
 @import "../../sass/variables";
 
+.blogSection {
+  background-color: $accent-color-secondary;
+  width: 100%;
+  position: relative;
+}
+
+.blogInner {
+  padding: 48px 15px 58px 15px;
+  min-width: 280px;
+}
+
 .titleLabel {
   text-align: left;
   color: $text-color-secondary;
@@ -15,4 +26,58 @@
 .titleDescription {
   text-align: left;
   color: $text-color-secondary;
+}
+
+@media screen and (min-width: 734px) {
+  .blogSection {
+    background-color: transparent;
+  }
+  .leftBG {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-color: $accent-color-secondary;
+  }
+  .rightBG {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../images/blog/blog.jpg");
+    .rightBGWebp {
+      background-image: url("../../images/blog/blog.webp");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../images/blog/blog@2x.jpg");
+      .rightBGWebp {
+        background-image: url("../../images/blog/blog@2x.webp");
+      }
+    }
+  }
+
+  .blogImageMob {
+    display: none;
+  }
+
+  .blogInner {
+    width: 50%;
+    padding: 59px 32px;
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1334px) {
+    .blogInner {
+      padding: 48px 20px 58px 0;
+      width: 642px;
+    }
+  }
 }

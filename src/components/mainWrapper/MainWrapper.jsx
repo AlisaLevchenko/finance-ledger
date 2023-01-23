@@ -13,28 +13,21 @@ import s from "./MainWrapper.module.scss";
 export default function MaunWrapper() {
   return (
     <>
-      <header className={s.header}>
-        <Navigation />
-      </header>
-      <section className={s.main}>
-        <Hero />
-      </section>
+      <Navigation />
+
+      <Hero />
+
       <About />
-      <section>
-        <Cases />
-      </section>
-      <section className={s.blog}>
-        <Blog />
-      </section>
-      <section>
-        <Team />
-      </section>
-      <section>
-        <CallbackForm />
-      </section>
-      <footer className={s.footer}>
-        <Footer />
-      </footer>
+
+      <Cases />
+
+      <Blog />
+
+      <Team />
+
+      <CallbackForm />
+
+      <Footer />
     </>
   );
 }

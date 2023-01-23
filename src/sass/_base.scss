@@ -71,3 +71,20 @@ strong {
   text-align: center;
   margin-bottom: 24px;
 }
+
+@media screen and (min-width: 734px) {
+  .titleLabel {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 1.35;
+  }
+
+  .titleDescription {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}

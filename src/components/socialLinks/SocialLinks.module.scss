@@ -1,0 +1,44 @@
+@import "../../sass/base";
+@import "../../sass/variables";
+
+.socList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.socItem {
+  width: 35px;
+  height: 35px;
+}
+
+.socItem:not(:last-child) {
+  margin-right: 25px;
+}
+
+.socLink {
+  width: 100%;
+  height: 100%;
+}
+
+.socIcon {
+  fill: $text-color-secondary;
+  transition: $animation-fill;
+}
+
+.green:hover .socIcon,
+.green:focus .socIcon {
+  fill: $accent-color;
+}
+
+.grey:hover .socIcon,
+.grey:focus .socIcon {
+  fill: grey;
+}
+
+@media screen and (min-width: 734px) {
+  .socList {
+    margin-bottom: 10px;
+  }
+}
