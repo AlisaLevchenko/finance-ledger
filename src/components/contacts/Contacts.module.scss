@@ -1,0 +1,94 @@
+@import "../../sass/container";
+@import "../../sass/base";
+@import "../../sass/variables";
+
+.contactSection {
+  background-color: #f4f4f4;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.contactInner {
+  padding: 51px 0 25px 0;
+  width: 280px;
+}
+
+.title {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 69px;
+}
+
+@media screen and (min-width: 734px) {
+  .contactSection {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+  }
+  .contactImageMob {
+    display: none;
+  }
+
+  .rightBG {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: #f4f4f4;
+  }
+
+  .leftBG {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../images/contact/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .leftBGWebp {
+      background-image: url("../../images/contact/contact.webp");
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../images/contact/contact@2x.jpg");
+      .leftBGWebp {
+        background-image: url("../../images/contact/contact@2x.webp");
+      }
+    }
+  }
+
+  .contactLeftSide {
+    width: 50%;
+  }
+  .contactInner {
+    width: 100%;
+    padding: 32px 0 62px 19px;
+    width: 336px;
+  }
+
+  .title {
+    line-height: 1.35;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1334px) {
+  .contactInner {
+    padding: 56px 0 77px 20px;
+    width: 642px;
+  }
+  .title {
+    margin-bottom: 31px;
+  }
+}

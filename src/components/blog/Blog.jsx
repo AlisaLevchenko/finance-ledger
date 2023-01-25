@@ -3,7 +3,7 @@ import Button from "../button/Button";
 
 export default function Blog() {
   return (
-    <article className={s.blogSection}>
+    <article className={s.blogSection} id="blog">
       <picture className={s.blogImageMob}>
         <source
           srcset={`${require("../../images/blog/blog.webp")} 1x, ${require("../../images/blog/blog@2x.webp")} 2x`}
@@ -30,7 +30,14 @@ export default function Blog() {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <Button label="Read Our Blog" bordered={true} hoverColor="blue" />
+          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
+            <Button
+              label="Read Our Blog"
+              type="button"
+              bordered={true}
+              hoverColor="blue"
+            />
+          </a>
         </div>
       </div>
     </article>

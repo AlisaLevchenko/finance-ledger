@@ -3,7 +3,7 @@ import Button from "../button/Button";
 
 export default function About() {
   return (
-    <section className={s.aboutSection}>
+    <section className={s.aboutSection} id="about">
       <picture className={s.aboutImageMob}>
         <source
           srcset={`${require("../../images/about/people.webp")} 1x, ${require("../../images/about/people@2x.webp")} 2x`}
@@ -31,7 +31,14 @@ export default function About() {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <Button label="Read More" bordered={true} hoverColor="green" />
+          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
+            <Button
+              label="Read More"
+              type="button"
+              bordered={true}
+              hoverColor="green"
+            />
+          </a>
         </div>
       </div>
     </section>

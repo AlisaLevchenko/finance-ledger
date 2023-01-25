@@ -6,6 +6,7 @@ export default function Button(props) {
   return (
     <div>
       <button
+        type={props.type}
         style={{ fontSize: `${props.fontSize}px` }}
         className={`${s.btn} ${props.bordered ? s.btnBordered : ""} ${
           s[hoverColor]
