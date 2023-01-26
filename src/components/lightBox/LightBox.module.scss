@@ -1,0 +1,49 @@
+@import "../../sass/variables";
+@import "../../sass/base";
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.432);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+}
+
+.modalImageWrapper {
+  position: relative;
+}
+
+.modalImage {
+  max-width: 500px;
+  width: 100%;
+}
+
+.modalBtn {
+  position: absolute;
+  background-color: transparent;
+  width: 100px;
+  height: 100%;
+  border: none;
+}
+
+.modalBtn:hover {
+  background-color: rgb(4, 4, 4, 0.5);
+}
+
+.modalBtnPrev {
+  left: 0;
+  top: 0;
+}
+
+.modalBtnNext {
+  right: 0;
+  top: 0;
+}

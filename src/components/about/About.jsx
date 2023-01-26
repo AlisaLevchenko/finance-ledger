@@ -6,11 +6,11 @@ export default function About() {
     <section className={s.aboutSection} id="about">
       <picture className={s.aboutImageMob}>
         <source
-          srcset={`${require("../../images/about/people.webp")} 1x, ${require("../../images/about/people@2x.webp")} 2x`}
+          srcSet={`${require("../../images/about/people.webp")} 1x, ${require("../../images/about/people@2x.webp")} 2x`}
           type="image/webp"
         />
         <source
-          srcset={`${require("../../images/about/people.jpg")} 1x, ${require("../../images/about/people@2x.jpg")} 2x`}
+          srcSet={`${require("../../images/about/people.jpg")} 1x, ${require("../../images/about/people@2x.jpg")} 2x`}
           type="image/jpeg"
         />
         <img

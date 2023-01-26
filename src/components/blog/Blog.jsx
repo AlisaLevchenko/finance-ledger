@@ -6,11 +6,11 @@ export default function Blog() {
     <article className={s.blogSection} id="blog">
       <picture className={s.blogImageMob}>
         <source
-          srcset={`${require("../../images/blog/blog.webp")} 1x, ${require("../../images/blog/blog@2x.webp")} 2x`}
+          srcSet={`${require("../../images/blog/blog.webp")} 1x, ${require("../../images/blog/blog@2x.webp")} 2x`}
           type="image/webp"
         />
         <source
-          srcset={`${require("../../images/blog/blog.jpg")} 1x, ${require("../../images/blog/blog@2x.jpg")} 2x`}
+          srcSet={`${require("../../images/blog/blog.jpg")} 1x, ${require("../../images/blog/blog@2x.jpg")} 2x`}
           type="image/jpeg"
         />
         <img

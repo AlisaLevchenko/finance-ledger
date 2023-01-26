@@ -17,11 +17,11 @@ export default function Team() {
               <div className={s.teamImage}>
                 <picture>
                   <source
-                    srcset={`${require("../../images/team/person1.webp")} 1x, ${require("../../images/team/person1@2x.webp")} 2x`}
+                    srcSet={`${require("../../images/team/person1.webp")} 1x, ${require("../../images/team/person1@2x.webp")} 2x`}
                     type="image/webp"
                   />
                   <source
-                    srcset={`${require("../../images/team/person1.jpg")} 1x, ${require("../../images/team/person1@2x.jpg")} 2x`}
+                    srcSet={`${require("../../images/team/person1.jpg")} 1x, ${require("../../images/team/person1@2x.jpg")} 2x`}
                     type="image/jpeg"
                   />
                   <img
@@ -42,11 +42,11 @@ export default function Team() {
               <div className={s.teamImage}>
                 <picture>
                   <source
-                    srcset={`${require("../../images/team/person2.webp")} 1x, ${require("../../images/team/person2@2x.webp")} 2x`}
+                    srcSet={`${require("../../images/team/person2.webp")} 1x, ${require("../../images/team/person2@2x.webp")} 2x`}
                     type="image/webp"
                   />
                   <source
-                    srcset={`${require("../../images/team/person2.jpg")} 1x, ${require("../../images/team/person2@2x.jpg")} 2x`}
+                    srcSet={`${require("../../images/team/person2.jpg")} 1x, ${require("../../images/team/person2@2x.jpg")} 2x`}
                     type="image/jpeg"
                   />
                   <img
@@ -67,11 +67,11 @@ export default function Team() {
               <div className={s.teamImage}>
                 <picture>
                   <source
-                    srcset={`${require("../../images/team/person3.webp")} 1x, ${require("../../images/team/person3@2x.webp")} 2x`}
+                    srcSet={`${require("../../images/team/person3.webp")} 1x, ${require("../../images/team/person3@2x.webp")} 2x`}
                     type="image/webp"
                   />
                   <source
-                    srcset={`${require("../../images/team/person3.jpg")} 1x, ${require("../../images/team/person3@2x.jpg")} 2x`}
+                    srcSet={`${require("../../images/team/person3.jpg")} 1x, ${require("../../images/team/person3@2x.jpg")} 2x`}
                     type="image/jpeg"
                   />
                   <img

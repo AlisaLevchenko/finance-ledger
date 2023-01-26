@@ -1,3 +1,5 @@
+import CasesGallary from "../casesGallary/CasesGallary";
+
 import s from "./Cases.module.scss";
 
 export default function Cases() {
@@ -11,38 +13,7 @@ export default function Cases() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!
           </p>
-          <ul className={s.casesList}>
-            <li className={s.casesItem}>
-              <a href="/">
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li className={s.casesItem}>
-              <a href="/">
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li className={s.casesItem}>
-              <a href="/">
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li className={s.casesItem}>
-              <a href="/">
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li className={s.casesItem}>
-              <a href="/">
-                <img src="" alt="" />
-              </a>
-            </li>
-            <li className={s.casesItem}>
-              <a href="/">
-                <img src="" alt="" />
-              </a>
-            </li>
-          </ul>
+          <CasesGallary />
         </div>
       </div>
     </section>

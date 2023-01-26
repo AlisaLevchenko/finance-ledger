@@ -6,7 +6,6 @@ import Cases from "../cases/Cases";
 import Blog from "../blog/Blog";
 import Team from "../team/Team";
 import Contacts from "../contacts/Contacts";
-// import CallbackForm from "../callbackForm/CallbackForm";
 import Footer from "../footer/Footer";
 
 export default function MainWrapper() {
@@ -25,8 +24,6 @@ export default function MainWrapper() {
         <Team />
 
         <Contacts />
-
-        {/* <CallbackForm /> */}
       </main>
 
       <Footer />

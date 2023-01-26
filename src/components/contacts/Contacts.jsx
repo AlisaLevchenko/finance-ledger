@@ -7,11 +7,11 @@ export default function Contacts() {
     <section className={s.contactSection} id="contacts">
       <picture className={s.contactImageMob}>
         <source
-          srcset={`${require("../../images/contact/contact.webp")} 1x, ${require("../../images/contact/contact@2x.webp")} 2x`}
+          srcSet={`${require("../../images/contact/contact.webp")} 1x, ${require("../../images/contact/contact@2x.webp")} 2x`}
           type="image/webp"
         />
         <source
-          srcset={`${require("../../images/contact/contact.jpg")} 1x, ${require("../../images/contact/contact@2x.jpg")} 2x`}
+          srcSet={`${require("../../images/contact/contact.jpg")} 1x, ${require("../../images/contact/contact@2x.jpg")} 2x`}
           type="image/jpeg"
         />
         <img
