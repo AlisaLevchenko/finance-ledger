@@ -37,7 +37,7 @@ export default function CallbackForm() {
 
   return (
     <>
-      <form netlify>
+      <form method="POST" netlify>
         <p>
           <label>
             Your Name: <input type="text" name="name" />
