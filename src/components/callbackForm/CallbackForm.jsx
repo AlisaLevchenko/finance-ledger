@@ -37,8 +37,8 @@ export default function CallbackForm() {
 
   return (
     <>
+      {/* onSubmit={formik.handleSubmit} */}
       <form
-        onSubmit={formik.handleSubmit}
         className={s.form}
         autoComplete="true"
         name="contact"
