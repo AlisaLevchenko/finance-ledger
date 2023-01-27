@@ -85,7 +85,7 @@
   background-color: $accent-color;
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 768px) {
   .navigation {
     flex-direction: row;
     justify-content: space-between;
@@ -108,7 +108,7 @@
   }
 }
 
-@media screen and (min-width: 1334px) {
+@media screen and (min-width: 1360px) {
   .navigation {
     padding: 32px 0;
   }

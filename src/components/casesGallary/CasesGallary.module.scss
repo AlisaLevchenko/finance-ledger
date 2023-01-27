@@ -15,7 +15,7 @@
   opacity: 0.8;
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 768px) {
   .casesList {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 1334px) {
+@media screen and (min-width: 1360px) {
   .casesList {
     gap: 20px;
   }

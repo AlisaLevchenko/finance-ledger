@@ -27,17 +27,8 @@ export default function CallbackForm() {
     },
   });
 
-  // const onButtonClick = () => {
-  //   if (formik.values.email === "") {
-  //     formik.setFieldError("email", "This is a required field");
-  //     formik.setFieldTouched("email", true);
-  //     return;
-  //   }
-  // };
-
   return (
     <>
-      {/* onSubmit={formik.handleSubmit} */}
       <form className={s.form} autoComplete="true" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <div className={s.nameField} role="group">
@@ -90,7 +81,6 @@ export default function CallbackForm() {
           </div>
         </div>
         <Button type="submit" arrow={false} label="Send" fontSize={18} />
-        {/* onButtonClick={onButtonClick} */}
       </form>
     </>
   );

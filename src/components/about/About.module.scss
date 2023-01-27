@@ -34,7 +34,7 @@
   color: $text-color-secondary;
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 768px) {
   .aboutSection {
     display: flex;
     flex-direction: row;
@@ -88,7 +88,7 @@
   }
 }
 
-@media screen and (min-width: 1334px) {
+@media screen and (min-width: 1360px) {
   .aboutInner {
     padding: 80px 28px 86px 20px;
     width: 642px;

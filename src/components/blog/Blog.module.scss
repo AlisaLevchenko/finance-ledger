@@ -28,7 +28,7 @@
   color: $text-color-secondary;
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 768px) {
   .blogSection {
     background-color: transparent;
   }
@@ -74,7 +74,7 @@
     width: 336px;
   }
 
-  @media screen and (min-width: 1334px) {
+  @media screen and (min-width: 1360px) {
     .blogInner {
       padding: 48px 20px 58px 0;
       width: 642px;
