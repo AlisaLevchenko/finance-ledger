@@ -7,7 +7,7 @@ import s from "./Navigation.module.scss";
 export default function Navigation() {
   // eslint-disable-next-line
   let lastScroll = 0;
-  const defaultOffset = document.documentElement.clientWidth >= 734 ? 70 : 120;
+  const defaultOffset = document.documentElement.clientWidth >= 768 ? 70 : 120;
   const header = useRef(null);
 
   document.addEventListener("scroll", () => {
