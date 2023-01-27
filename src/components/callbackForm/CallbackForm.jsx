@@ -35,6 +35,7 @@ export default function CallbackForm() {
         autoComplete="true"
         name="contact"
         method="post"
+        netlify
       >
         <div className={s.nameField} role="group">
           <input
