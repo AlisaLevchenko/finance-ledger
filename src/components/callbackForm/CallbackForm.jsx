@@ -27,13 +27,13 @@ export default function CallbackForm() {
     },
   });
 
-  const onButtonClick = () => {
-    if (formik.values.email === "") {
-      formik.setFieldError("email", "This is a required field");
-      formik.setFieldTouched("email", true);
-      return;
-    }
-  };
+  // const onButtonClick = () => {
+  //   if (formik.values.email === "") {
+  //     formik.setFieldError("email", "This is a required field");
+  //     formik.setFieldTouched("email", true);
+  //     return;
+  //   }
+  // };
 
   return (
     <>
