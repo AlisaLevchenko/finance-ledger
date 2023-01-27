@@ -38,13 +38,7 @@ export default function CallbackForm() {
   return (
     <>
       {/* onSubmit={formik.handleSubmit} */}
-      <form
-        className={s.form}
-        autoComplete="true"
-        name="contact"
-        method="post"
-        netlify
-      >
+      <form className={s.form} autoComplete="true" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact"></input>
         <div className={s.nameField} role="group">
           <input
