@@ -1,31 +1,31 @@
 import React from "react";
-// import { useFormik } from "formik";
-// import * as Yup from "yup";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
-// import Button from "../button/Button";
-// import sprite from "../../images/sprite.svg";
-// import s from "./CallbackForm.module.scss";
+import Button from "../button/Button";
+import sprite from "../../images/sprite.svg";
+import s from "./CallbackForm.module.scss";
 
 export default function CallbackForm() {
-  // const schema = Yup.object().shape({
-  //   name: Yup.string().label(),
+  const schema = Yup.object().shape({
+    name: Yup.string().label(),
 
-  //   email: Yup.string()
-  //     .email("This email is not valid")
-  //     .required("This is a required field"),
-  // });
-  // const formik = useFormik({
-  //   initialValues: {
-  //     name: "",
-  //     email: "",
-  //   },
+    email: Yup.string()
+      .email("This email is not valid")
+      .required("This is a required field"),
+  });
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+    },
 
-  //   validationSchema: schema,
+    validationSchema: schema,
 
-  //   onSubmit: (values) => {
-  //     alert(JSON.stringify(values, null, 2));
-  //   },
-  // });
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
 
   // const onButtonClick = () => {
   //   if (formik.values.email === "") {
@@ -37,28 +37,15 @@ export default function CallbackForm() {
 
   return (
     <>
-      <form method="POST" netlify>
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-      {/* <form
+      {/* onSubmit={formik.handleSubmit} */}
+      <form
         className={s.form}
         autoComplete="true"
         name="contact"
         method="post"
         netlify
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className={s.nameField} role="group">
           <input
             className={s.formInput}
@@ -109,7 +96,8 @@ export default function CallbackForm() {
           </div>
         </div>
         <Button type="submit" arrow={false} label="Send" fontSize={18} />
-      </form>  */}
+        {/* onButtonClick={onButtonClick} */}
+      </form>
     </>
   );
 }
