@@ -27,6 +27,14 @@ export default function CallbackForm() {
     },
   });
 
+  const onButtonClick = () => {
+    if (formik.values.email === "") {
+      formik.setFieldError("email", "This is a required field");
+      formik.setFieldTouched("email", true);
+      return;
+    }
+  };
+
   return (
     <>
       <form
@@ -87,7 +95,13 @@ export default function CallbackForm() {
             )}
           </div>
         </div>
-        <Button type="submit" arrow={false} label="Send" fontSize={18} />
+        <Button
+          type="submit"
+          arrow={false}
+          label="Send"
+          fontSize={18}
+          onButtonClick={onButtonClick}
+        />
       </form>
     </>
   );
