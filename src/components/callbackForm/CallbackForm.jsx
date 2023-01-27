@@ -1,31 +1,31 @@
 import React from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup";
+// import { useFormik } from "formik";
+// import * as Yup from "yup";
 
-import Button from "../button/Button";
-import sprite from "../../images/sprite.svg";
-import s from "./CallbackForm.module.scss";
+// import Button from "../button/Button";
+// import sprite from "../../images/sprite.svg";
+// import s from "./CallbackForm.module.scss";
 
 export default function CallbackForm() {
-  const schema = Yup.object().shape({
-    name: Yup.string().label(),
+  // const schema = Yup.object().shape({
+  //   name: Yup.string().label(),
 
-    email: Yup.string()
-      .email("This email is not valid")
-      .required("This is a required field"),
-  });
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-    },
+  //   email: Yup.string()
+  //     .email("This email is not valid")
+  //     .required("This is a required field"),
+  // });
+  // const formik = useFormik({
+  //   initialValues: {
+  //     name: "",
+  //     email: "",
+  //   },
 
-    validationSchema: schema,
+  //   validationSchema: schema,
 
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+  //   onSubmit: (values) => {
+  //     alert(JSON.stringify(values, null, 2));
+  //   },
+  // });
 
   // const onButtonClick = () => {
   //   if (formik.values.email === "") {
