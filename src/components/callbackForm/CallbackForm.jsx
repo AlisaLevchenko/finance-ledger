@@ -37,6 +37,7 @@ export default function CallbackForm() {
         method="post"
         netlify
       >
+        <input type="hidden" name="form-name" value="contact"></input>
         <div className={s.nameField} role="group">
           <input
             className={s.formInput}
