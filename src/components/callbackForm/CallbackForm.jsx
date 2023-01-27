@@ -38,8 +38,13 @@ export default function CallbackForm() {
   return (
     <>
       {/* onSubmit={formik.handleSubmit} */}
-      {/* name="contact" */}
-      <form className={s.form} autoComplete="true" method="post" netlify>
+      <form
+        className={s.form}
+        autoComplete="true"
+        name="contact"
+        method="post"
+        netlify
+      >
         {/* <input type="hidden" name="form-name" value="contact"></input> */}
         <div className={s.nameField} role="group">
           <input
@@ -90,13 +95,8 @@ export default function CallbackForm() {
             )}
           </div>
         </div>
-        <Button
-          type="submit"
-          arrow={false}
-          label="Send"
-          fontSize={18}
-          onButtonClick={onButtonClick}
-        />
+        <Button type="submit" arrow={false} label="Send" fontSize={18} />
+        {/* onButtonClick={onButtonClick} */}
       </form>
     </>
   );
