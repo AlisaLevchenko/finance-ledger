@@ -26,9 +26,7 @@ export default function LightBox({ setIsOpen, images, startedImg, totalImg }) {
               aria-label="previous"
               type="button"
               onClick={prev}
-            >
-              Prev
-            </button>
+            ></button>
           )}
 
           <picture className={s.modalImage}>
@@ -52,19 +50,27 @@ export default function LightBox({ setIsOpen, images, startedImg, totalImg }) {
               aria-label="next"
               type="button"
               onClick={next}
-            >
-              Next
-            </button>
+            ></button>
           )}
         </div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque,
-          aut quam!
-        </p>
-        <p>
-          {`Case ${curImg} of
+        <div className={s.modalDescriptionWrapper}>
+          <div>
+            <p className={s.modalDescription}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, aut quam!
+            </p>
+            <p className={s.modalDescriptionCases}>
+              {`Image ${curImg + 1} of
           ${totalImg}`}
-        </p>
+            </p>
+          </div>
+          <button
+            className={s.modalBtnClose}
+            aria-label="close"
+            type="button"
+            onClick={closeHandler}
+          ></button>
+        </div>
       </div>
     </div>
   );

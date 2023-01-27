@@ -1,8 +1,8 @@
-// import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import s from "./Navigation.module.scss";
-import logo from "../../images/logo.svg";
 import { useRef } from "react";
+
+import logo from "../../images/logo.svg";
+import s from "./Navigation.module.scss";
 
 export default function Navigation() {
   // eslint-disable-next-line
@@ -29,7 +29,6 @@ export default function Navigation() {
       <div className={s.container}>
         <div className={s.navigation}>
           <a className={s.logoLink} href="/">
-            {/* SVG_LOGO!!!! */}
             <img src={logo} alt="logo" />
           </a>
           <nav>
