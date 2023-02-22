@@ -30,14 +30,13 @@ export default function Blog() {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-            <Button
-              label="Read Our Blog"
-              type="button"
-              bordered={true}
-              hoverColor="blue"
-            />
-          </a>
+
+          <Button
+            label="Read Our Blog"
+            type="button"
+            bordered={true}
+            hoverColor="blue"
+          />
         </div>
       </div>
     </article>

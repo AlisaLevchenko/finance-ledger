@@ -31,14 +31,13 @@ export default function About() {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <a href="/" target="_blank" rel="noopener noreferrer nofollow">
-            <Button
-              label="Read More"
-              type="button"
-              bordered={true}
-              hoverColor="green"
-            />
-          </a>
+
+          <Button
+            label="Read More"
+            type="button"
+            bordered={true}
+            hoverColor="green"
+          />
         </div>
       </div>
     </section>
